@@ -30,10 +30,8 @@ func Connect() {
 
 // Migrate
 func Migrate() {
-	modelsRegistry := models.Models
-
-	for _, model := range modelsRegistry {
-		DB.AutoMigrate(&model)
+	for _, model := range models.ModelList {
+		DB.AutoMigrate(model)
 	}
 
 	fmt.Println("Database schema migrated...")

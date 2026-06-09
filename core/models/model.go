@@ -4,12 +4,19 @@ import (
 	"gocoon/core/models/entity"
 )
 
-var Models = make(map[string]interface{})
+var ModelList = []interface{}{
+	&entity.User{},
+	&entity.Todo{},
+}
+
+var ModelMap = map[string]interface{}{
+	"User": &entity.User{},
+	"Todo": &entity.Todo{},
+}
 
 type Model interface{}
 
-// Register every model here for validation purpose
-func Register() {
-	Models["User"] = &entity.User{}
-	Models["Todo"] = &entity.Todo{}
+func GetModelByName(name string) (interface{}, bool) {
+	model, ok := ModelMap[name]
+	return model, ok
 }

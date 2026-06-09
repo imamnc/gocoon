@@ -30,15 +30,15 @@ type Config struct {
 
 var Data Config
 
-func LoadEnv() {
+func Load() {
+	// Load env
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatalf("Error when loading .env file: %v", err)
 	}
 	fmt.Println("Environment data loaded...")
-}
 
-func Load() {
+	// Load config
 	appPort, _ := strconv.Atoi(GetEnv("PORT", "8000"))
 	dbPort, _ := strconv.Atoi(GetEnv("DB_PORT", "5432"))
 	jwtExpiration, _ := strconv.Atoi(GetEnv("JWT_EXPIRATION", "604800"))

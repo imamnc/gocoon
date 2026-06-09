@@ -10,7 +10,7 @@ type CreateTodoRequest struct {
 	UserID  int    `json:"user_id"`
 	Title   string `json:"title"`
 	Content string `json:"content"`
-	Checked any    `json:"checked"`
+	Checked bool   `json:"checked"`
 }
 
 func (u *CreateTodoRequest) Validate() interface{} {
@@ -28,7 +28,7 @@ type UpdateTodoRequest struct {
 	UserID  int    `json:"user_id"`
 	Title   string `json:"title"`
 	Content string `json:"content"`
-	Checked any    `json:"checked"`
+	Checked bool   `json:"checked"`
 }
 
 func (u *UpdateTodoRequest) Validate() interface{} {

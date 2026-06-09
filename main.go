@@ -5,7 +5,6 @@ import (
 
 	"gocoon/core/config"
 	"gocoon/core/database"
-	"gocoon/core/models"
 	"gocoon/services/auth"
 	"gocoon/services/todo"
 	"gocoon/services/user"
@@ -41,11 +40,7 @@ func SetupRoutes(app *fiber.App) {
 
 func Prepare() {
 	// Load env
-	config.LoadEnv()
-	// Load Config
 	config.Load()
-	// Load Models
-	models.Register()
 	// Connect to database
 	database.Connect()
 	// Migrate
