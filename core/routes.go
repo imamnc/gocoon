@@ -1,15 +1,15 @@
-package routes
+package app
 
 import (
-	"gocoon_fiber/services/auth"
-	"gocoon_fiber/services/todo"
-	"gocoon_fiber/services/user"
-	"gocoon_fiber/services/welcome"
+	"gocoon/services/auth"
+	"gocoon/services/todo"
+	"gocoon/services/user"
+	"gocoon/services/welcome"
 
 	"github.com/gofiber/fiber/v2"
 )
 
-func Setup(app *fiber.App) {
+func RegisterRoute(app *fiber.App) {
 	// Welcome routes
 	welcome.Mount(app)
 	// User routes

@@ -1,7 +1,7 @@
 package main
 
 import (
-	app "gocoon_fiber/core"
+	app "gocoon/core"
 )
 
 func main() {

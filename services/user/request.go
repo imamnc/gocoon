@@ -1,7 +1,7 @@
 package user
 
 import (
-	"gocoon_fiber/utils"
+	"gocoon/utils"
 
 	"github.com/thedevsaddam/govalidator"
 )

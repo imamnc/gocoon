@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"gocoon_fiber/utils"
+	"gocoon/utils"
 
 	"github.com/thedevsaddam/govalidator"
 )

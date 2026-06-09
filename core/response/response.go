@@ -54,3 +54,15 @@ func Validation(c *fiber.Ctx, result interface{}) error {
 	}
 	return nil
 }
+
+func ResponseSuccess(c *fiber.Ctx, message string, data interface{}) error {
+	return Success(c, message, data)
+}
+
+func ResponseError(c *fiber.Ctx, statusCode int, message string, err interface{}) error {
+	return Error(c, statusCode, message, err)
+}
+
+func ResponseValidation(c *fiber.Ctx, result interface{}) error {
+	return Validation(c, result)
+}

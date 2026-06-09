@@ -1,7 +1,7 @@
 package user
 
 import (
-	"gocoon_fiber/middleware"
+	"gocoon/middleware"
 
 	"github.com/gofiber/fiber/v2"
 )

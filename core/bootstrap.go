@@ -3,10 +3,9 @@ package app
 import (
 	"fmt"
 
-	"gocoon_fiber/config"
-	"gocoon_fiber/database"
-	"gocoon_fiber/models"
-	"gocoon_fiber/routes"
+	"gocoon/config"
+	"gocoon/database"
+	"gocoon/models"
 
 	"github.com/gofiber/fiber/v2"
 )
@@ -25,7 +24,7 @@ func Init() {
 	// Init fiber app
 	app := fiber.New()
 	// Init routes
-	routes.Setup(app)
+	RegisterRoute(app)
 	// Expose app
 	app.Listen(fmt.Sprintf(":%v", config.Data.Port))
 }

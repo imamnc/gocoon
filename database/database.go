@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"gocoon_fiber/config"
-	"gocoon_fiber/models"
+	"gocoon/config"
+	"gocoon/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -19,7 +19,6 @@ func Connect() {
 	var dsn string = fmt.Sprintf("host=%v user=%v password=%v dbname=%v port=%v sslmode=disable TimeZone=Asia/Jakarta", config.Data.Database.Host, config.Data.Database.User, config.Data.Database.Password, config.Data.Database.DBName, config.Data.Database.Port)
 
 	db_instance, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
-
 	if err != nil {
 		log.Fatal("Cannot connect to database")
 	}
