@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	response "gocoon/core/response"
+	"gocoon/core/response"
 	"gocoon/database"
 	"gocoon/models/entity"
 	"gocoon/utils"

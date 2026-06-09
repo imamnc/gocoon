@@ -46,23 +46,3 @@ func Error(c *fiber.Ctx, statusCode int, message string, err interface{}) error 
 		})
 	}
 }
-
-// Response validation
-func Validation(c *fiber.Ctx, result interface{}) error {
-	if result != nil {
-		return Error(c, 422, "Validation Error !", result)
-	}
-	return nil
-}
-
-func ResponseSuccess(c *fiber.Ctx, message string, data interface{}) error {
-	return Success(c, message, data)
-}
-
-func ResponseError(c *fiber.Ctx, statusCode int, message string, err interface{}) error {
-	return Error(c, statusCode, message, err)
-}
-
-func ResponseValidation(c *fiber.Ctx, result interface{}) error {
-	return Validation(c, result)
-}

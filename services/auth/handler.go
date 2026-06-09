@@ -3,7 +3,7 @@ package auth
 import (
 	"fmt"
 
-	response "gocoon/core/response"
+	"gocoon/core/response"
 	"gocoon/database"
 	"gocoon/models/entity"
 	"gocoon/utils"
