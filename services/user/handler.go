@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
+	"gocoon/core/database"
+	"gocoon/core/models/entity"
 	"gocoon/core/response"
-	"gocoon/database"
-	"gocoon/models/entity"
-	"gocoon/utils"
+	"gocoon/core/utils"
 
 	"github.com/gofiber/fiber/v2"
 	"gorm.io/gorm"

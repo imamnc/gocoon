@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"time"
 
-	"gocoon/config"
+	"gocoon/core/config"
 
 	"github.com/golang-jwt/jwt/v5"
 )

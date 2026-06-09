@@ -3,9 +3,9 @@ package middleware
 import (
 	"time"
 
-	response "gocoon/core/response"
-	"gocoon/database"
-	"gocoon/models"
+	"gocoon/core/database"
+	"gocoon/core/models"
+	"gocoon/core/response"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"

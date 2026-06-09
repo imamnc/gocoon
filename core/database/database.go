@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"gocoon/config"
-	"gocoon/models"
+	"gocoon/core/config"
+	"gocoon/core/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

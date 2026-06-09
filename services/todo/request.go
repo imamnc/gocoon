@@ -1,7 +1,7 @@
 package todo
 
 import (
-	"gocoon/utils"
+	"gocoon/core/utils"
 
 	"github.com/thedevsaddam/govalidator"
 )

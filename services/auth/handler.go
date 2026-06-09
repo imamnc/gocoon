@@ -3,10 +3,10 @@ package auth
 import (
 	"fmt"
 
+	"gocoon/core/database"
+	"gocoon/core/models/entity"
 	"gocoon/core/response"
-	"gocoon/database"
-	"gocoon/models/entity"
-	"gocoon/utils"
+	"gocoon/core/utils"
 
 	"github.com/gofiber/fiber/v2"
 	"golang.org/x/crypto/bcrypt"

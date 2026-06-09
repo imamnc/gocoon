@@ -3,7 +3,7 @@ package entity
 import (
 	"time"
 
-	"gocoon/utils"
+	"gocoon/core/utils"
 
 	"gorm.io/gorm"
 )

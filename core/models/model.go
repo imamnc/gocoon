@@ -1,7 +1,7 @@
 package models
 
 import (
-	"gocoon/models/entity"
+	"gocoon/core/models/entity"
 )
 
 var Models = make(map[string]interface{})
